@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Gordon!!!</title>
+ <style type="text/css">
+  #gordon-canvas {
+   width: 100%;
+  }
+ </style>
+ <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+ <h1>Odin &mdash; Gordon</h1>
+ <canvas id="gordon-canvas"></canvas>
+ <pre id="gordon-console" style="border: 1px solid black"></pre>
+</body>
+<script type="text/javascript" src="odin.js"></script>
+<script type="text/javascript">
+ odin.runWasm("/gordon.wasm", document.getElementById("gordon-console"))
+</script>
+</html>
